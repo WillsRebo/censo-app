@@ -3,9 +3,7 @@ import AgregarPersona from './AgregarPersona'
 import ListarPersonas from './ListarPersonas'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
-import NoEncontrado from './NoEncontrado';
 import GraficoPersonasDepto from './GraficoPersonasDepto'
-import { Bar } from 'react-chartjs-2';
 import TiempoRestanteCenso from './TiempoRestanteCenso';
 import Mapa from './MapaUsuariosPorDepto';
 import GraficoPersonasPorOcupacion from './GraficoPersonasOcupacion';

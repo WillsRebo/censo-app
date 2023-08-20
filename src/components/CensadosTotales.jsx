@@ -22,7 +22,7 @@ const CensadosTotales = () => {
 
     return (
         <div className="container">
-            <h3 className="mb-3">Listar Personas</h3>
+            <h3 className="mb-3">Censados Totales</h3>
             <div className="row">
                 <p className="txtCensadosTotales col-12">Total de personas censadas: <span className="numCensadosTotales numCenso">{totalCensadas}</span></p>
                 <p className="txtCensadosTotales col-6">Total de personas censadas en Montevideo: <span className="numCensadosMon numCenso">{censadasMvdo}</span></p>

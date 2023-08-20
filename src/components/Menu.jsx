@@ -1,27 +1,28 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Menu = () => {
-  let navigate=useNavigate();
+  let navigate = useNavigate();
 
 
-    const estiloCustom = {
-      textDecoration: 'none', 
-      color: 'white'
-    };
+  const estiloCustom = {
+    textDecoration: 'none',
+    color: 'white'
+  };
 
 
 
   const cerrarSesion = () => {
-  localStorage.clear();
-  navigate('/');
+    localStorage.clear();
+    navigate('/');
   };
 
   const existeUsuario = () => {
-    if (localStorage.getItem('idUsuario')!==null) {
+    if (localStorage.getItem('idUsuario') !== null) {
       return (
-        <NavLink style={estiloCustom} onClick={cerrarSesion} to="/">
+        <NavLink className="logout ms-0" style={estiloCustom} onClick={cerrarSesion} to="/">
           Logout
         </NavLink>
 
@@ -29,15 +30,15 @@ const Menu = () => {
     }
   };
   return (
-    <div className="contenedor menu">
-      <header className="header">
+    <div className="container menu">
+      <header className="header row">
       </header>
-      <main>
-        <nav className="logout nav justify-content-end">
+      <main className="row">
+        <nav className="nav justify-content-end col-12">
           {existeUsuario()}
         </nav>
 
-        <Outlet />
+        <Outlet className="col-12" />
       </main>
     </div>
   );

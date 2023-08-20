@@ -74,7 +74,7 @@ const Login = () => {
         </div>
         <div className='row'>
           <label className='col-4 mb-1' htmlFor='txtPass'>Password</label>
-          <input className='col-8 mb-1' type='text' id='txtPass' ref={pass} onChange={verificarNotEmpty} />
+          <input className='col-8 mb-1' type='password' id='txtPass' ref={pass} onChange={verificarNotEmpty} />
         </div>
         <div className='row loginDiv'>
           <Link className="col-8" to="/Registro">No tienes usuario? Regístrate</Link>

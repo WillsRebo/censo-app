@@ -79,7 +79,7 @@ return (
       </div>
       <div className='row'>
         <label className='col-4 mb-1' htmlFor='passReg'>Contraseña</label>
-        <input className='col-8 mb-1' type='text' id='passReg' ref={pass} onChange={verificarNotEmpty} />
+        <input className='col-8 mb-1' type='password' id='passReg' ref={pass} onChange={verificarNotEmpty} />
       </div>
       <div className='row'>
         <button type='button' className='btn btn-outline-primary btnRegistro mt-1 ' disabled={habilitarBoton} onClick={registrarUsuario}>Registrarse</button>
