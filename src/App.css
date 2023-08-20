@@ -13,6 +13,7 @@ html {
   justify-content: center;
 }
 
+
 .dashbord {
   width: 100%;
   align-items: center;
@@ -50,10 +51,18 @@ input {
   text-align: center;
 }
 
-header {
+.header {
   height: 230px;
   background-image: url('./img/censo.png');
   background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.headerNull {
+  height: 150px;
+  background-image: url('./img/censo.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -65,7 +65,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <form action='' id='login' className='container'>
         <h2 className='mx-auto'>Login</h2>
         <div className='row'>

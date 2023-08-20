@@ -19,6 +19,12 @@ const Menu = () => {
     navigate('/');
   };
 
+  const existeUsuarioHeader = () => {
+    return(
+    localStorage.getItem('idUsuario') !== null ? <header className="header row"></header>:<header className="headerNull row"></header>
+    )
+  };
+
   const existeUsuario = () => {
     if (localStorage.getItem('idUsuario') !== null) {
       return (
@@ -31,8 +37,7 @@ const Menu = () => {
   };
   return (
     <div className="container menu">
-      <header className="header row">
-      </header>
+      {existeUsuarioHeader()}
       <main className="row">
         <nav className="nav justify-content-end col-12">
           {existeUsuario()}
