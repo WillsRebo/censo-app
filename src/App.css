@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+  margin: 0;
+  padding: 0; 
+}
+body{
+  
+  height: 100vh;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+}
+.dashbord{
+  margin-left:-5em;
+  width:1000px;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset{
+  margin: 15px;
+  padding: 15px;
+  width: 30vw;
+}
+label, select{
+  margin: 10px 0 0 0;
+  display: block;
+  align-items: center;
+  justify-items: center;
+}
+input{
+  border-radius: 5px;
+  border:1px solid black;  
+  padding-left: 5px;
+  
+}
+
+.loginDiv{
+  justify-content: center;
+  align-items: center;
+}
+
+.optionFiltro{
+  text-align: center;
+}
+header{
+  height: 250px;
+  background-image: url('./img/censo.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div:first-of-type(h2){
+  justify-content: center;
+  align-items: center;
+}
+#root{
+  margin: 0 50px 0 50px;
+  width: 50%;
+
+}
+
+.divCountdown :first-child{
+  margin: auto;
+  height: 3em;
+  width: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 255, 0.5);
+  font-size: 3em;
+  border-radius: 100px;
+  border: solid 3px blueviolet;
+  font-weight: bolder;
+}
+
+.divPorcentaje :first-child{
+  margin: auto;
+  height: 3em;
+  width: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(162, 255, 0, 0.5);
+  font-size: 3em;
+  border-radius: 100px;
+  border: solid 3px rgb(140, 14, 14);
+  font-weight: bolder;
+}
+
+.logout{
+  margin-left:54em;
+  padding: 1px 4px 1px 4px;
+  border-radius: 10px;
+  color: white;
+  display: inline;
+  background-color: rgb(92, 6, 92);
+}
+
+h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  display: block;
+  background-color: rgba(190, 181, 159, 0.518);
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  padding: 1px;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+.txtCensadosTotales{
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
+.numCenso{
+  margin: auto;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  font-size: 2em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+.numCensadosMon{
+  background-color: rgba(255, 0, 0, 0.5);  
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: solid 3px rgb(14, 140, 90);
+}
+
+.numCensadosResto{
+  background-color: rgba(0, 34, 255, 0.5);
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: solid 3px rgb(203, 109, 16);
+}
+
+.numCensadosTotales{
+  background-color: rgba(196, 18, 212, 0.5);
+  border-radius: 100px;
+  border: solid 3px rgb(225, 12, 22);
+}
+
+.contain.divAgrLisPer{
+  height:500px; 
+
+}
+
+
